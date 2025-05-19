@@ -12,7 +12,7 @@ def run_code():
     data = request.get_json()
     code = data.get('code', '')
     try:
-        result = subprocess.run(['python', '-c', code], capture_output=True, text=True)
+        result = subprocess.run(['python', '-c', code], capture_output=True, text=True, timeout=5)
         output = result.stdout if result.stdout else result.stderr
     except Exception as e:
         output = str(e)
