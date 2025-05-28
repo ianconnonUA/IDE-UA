@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import subprocess
 
 app = Flask(__name__)
+name = "Python Code Executor"
 
 @app.route('/', methods=['GET'])
 def index():
