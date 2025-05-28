@@ -1,0 +1,23 @@
+# Ignorar archivo principal de backend
+app.py
+
+# Ignorar templates de backend
+templates/
+
+# Bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos temporales
+*.log
+*.swp
+*.swo
+*.tmp
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local
+*.sqlite3
